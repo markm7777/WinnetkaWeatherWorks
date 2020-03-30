@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/WinnetkaWeatherWorks/precache-manifest.fd0ed70ef6949b6a1b3541ffadf0baaa.js"
+  "/WinnetkaWeatherWorks/precache-manifest.a6a7984c41f50b136f6a5767008bb109.js"
 );
 
 self.addEventListener('message', (event) => {
