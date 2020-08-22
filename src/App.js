@@ -19,7 +19,7 @@ class MyWeatherComponent extends React.Component {
     this.setState({city: e.target.value});
   }
 
-  isNumeric(inputtxt) { 
+  isNumeric(inputtxt) {
     var letters = /^[0-9]+$/;
     if(inputtxt.match(letters)) {
       return true;
@@ -35,8 +35,6 @@ class MyWeatherComponent extends React.Component {
       this.setState({currentTime: date.toDateString() + ' ' + date.toLocaleTimeString('en-US')})
     }, 1000);
   }
-
-
 
   getWeather = () => {
     let url = `https://api.weatherbit.io/v2.0/forecast/daily?city=${this.state.city}&units=I&key=${weatherBitApiKey}`;
@@ -74,7 +72,7 @@ class MyWeatherComponent extends React.Component {
               <div key={index} id='forecastDayDiv'>
                 <div>
                   {item.day}
-                </div>  
+                </div>
                 <div>
                   <img src={process.env.PUBLIC_URL + '/icons/' + item.icon + '.png'} alt="Smiley face" height="80" width="80"/>
                 </div>
